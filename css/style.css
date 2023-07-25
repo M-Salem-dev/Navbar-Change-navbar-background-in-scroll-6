@@ -1,0 +1,30 @@
+body{
+    height: 5000px;
+}
+
+.navbar{
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar.sticky {
+    animation-name: animationFadeInDown;
+    animation-duration:1s;
+    background: #323031 none repeat scroll 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #ff9c0c;
+  }
+  @keyframes animationFadeInDown{	
+	0%{
+		top:-60px;		
+	}
+	100%{
+		top:0;
+	}
+}
